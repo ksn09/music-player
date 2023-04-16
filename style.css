@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+}
+
+.music-player {
+  /* From https://css.glass */
+  background: rgba(237, 215, 215, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(237, 215, 215, 0.3);
+  width: 30%;
+  min-height: 550px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(112, 20, 20, 0.664);
+}
+
+.song-img {
+  width: 237px;
+  height: 210px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.music-player h1 {
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.music-player p {
+  color: black;
+  margin-bottom: 5px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background-color: #bebcbd;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#Pprogress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 7px solid white;
+  box-shadow: 0 5px 5px rgba(255, 25, 25, 0.22);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(255, 25, 25, 0.22);
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: #f50a3d;
+  color: #fff;
+}
