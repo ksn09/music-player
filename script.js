@@ -3,7 +3,7 @@ let song = document.querySelector('#song');
 let control = document.querySelector('#ctrlIcon');
 
 
-console.log(control.classList);
+
 
 song.onloadedmetadata = function(){
     progress.max = song.duration;
@@ -24,7 +24,7 @@ function playPause() {
 if(song.play()) {
     setInterval (() => {
         progress.value = song.currentTime;
-    }, 1000)
+    }, 500)
 }
 
 
