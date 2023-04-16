@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 3em;
+  padding: 2.5em;
 }
 
 nav {
@@ -69,7 +69,7 @@ nav .circle {
   margin: 40px 0;
 }
 
-#Pprogress::-webkit-slider-thumb {
+#progress::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: white;
   width: 30px;
@@ -87,7 +87,7 @@ nav .circle {
 
 .controls div {
   width: 60px;
-  height: 40px;
+  height: 60px;
   margin: 20px;
   background-color: #fff;
   border-radius: 50%;
@@ -102,4 +102,16 @@ nav .circle {
   transform: scale(1.5);
   background: #f50a3d;
   color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .music-player {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1028px) and (max-width: 1920px) {
+  .music-player {
+    width: 30%;
+  }
 }
