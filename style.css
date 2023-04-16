@@ -12,14 +12,13 @@
 }
 
 .music-player {
-  /* From https://css.glass */
   background: rgba(237, 215, 215, 1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(237, 215, 215, 0.3);
-  width: 30%;
+  width: 85%;
   min-height: 550px;
   text-align: center;
   position: fixed;
@@ -88,7 +87,7 @@ nav .circle {
 
 .controls div {
   width: 60px;
-  height: 60px;
+  height: 40px;
   margin: 20px;
   background-color: #fff;
   border-radius: 50%;
