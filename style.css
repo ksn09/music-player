@@ -110,8 +110,9 @@ nav .circle {
   }
 }
 
-@media (min-width: 1028px) and (max-width: 1920px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
   .music-player {
     width: 30%;
   }
 }
+
